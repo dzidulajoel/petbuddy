@@ -1,0 +1,92 @@
+
+/*-----------------RESPONSIVE-----------------*/
+/* PHONE*/
+@media screen and (max-width:767px){
+        main{
+                width: 95%;
+                margin: auto;
+        }
+        .pageUn{
+                display: grid;
+                grid-template-columns: 1fr;
+                display: flex;
+        }
+        .pageDeux{
+                display: none;
+        }
+        .bienvenueContainer div:first-child{
+                margin: auto;
+                text-align: center;
+        }
+}
+/* TABLETTE*/
+@media screen and (min-width:768px) and (max-width:1023px){
+        main{
+                width: 80%;
+                margin: auto;
+                display: flex;
+        }
+        .pageUn{
+                display: grid;
+                grid-template-columns: 1fr;
+                display: flex;
+        }
+        .pageDeux{
+                display: none;
+        }
+        .discussion div p{
+                background-color: var(--couleur_de_button);
+                padding: 10px;
+                border-radius: 10px;
+                width: 400px;
+                display: inline-block;
+                font-weight: 300;
+                font-size: 1rem;
+                color: var(--couleur_de_fond);
+        }
+        .bienvenueContainer div:first-child{
+                margin: auto;
+                text-align: justify;
+        }
+}
+/* LAPTOP*/
+@media screen and (min-width:1024px){
+        main{
+                width: 70%;
+                margin: auto;
+        }
+        .bienvenueContainer div{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                font-family: var(--police_texte);
+                height: 50%;
+        }
+        .bienvenueContainer div:first-child{
+                margin: auto;
+                text-align: start;
+                padding: 0 60px;
+        }
+        .bienvenueContainer div:last-child img{
+                width: 50%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+        }
+        .discussion div p{
+                background-color: var(--couleur_de_button);
+                padding: 10px;
+                border-radius: 10px;
+                width: 450px;
+                display: inline-block;
+                font-weight: 300;
+                font-size: 1rem;
+                color: var(--couleur_de_fond);
+        }
+        .pageUn{
+                display: flex;
+        }
+        .pageDeux{
+                display: none;
+        }
+}

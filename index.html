@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BANKBUDDY</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/anim.css">
+        <link rel="stylesheet" href="/css/responsive.css">
+        <link rel="shortcut icon" href="./image/petFacicons.jpg" type="image/x-icon">
+        <!--Integration du BoxIcons CDN-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+                integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+                crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <section class="princiaple">
+                <nav>
+                        <h1>PETBUDDY <i class='bx bxs-cat'></i></h1>
+                        <div class="themeBtn">
+                                <div class="theme"></div>
+                        </div>
+                </nav>
+                <main>
+                        <section class="pageUn">
+                                <div class="bienvenueContainer">
+                                        <div>
+                                                <h2>Bienvenue sur <strong>PetBuddy</strong>, <br>Votre compagnon virtuel
+                                                        pour le bien-être de vos animaux de compagnie ! </h2>
+                                                <h2>Conseils - rappels - astuces </h2>
+                                        </div>
+                                        <div>
+                                                <img src="/image/pet.png" alt="" >
+                                        </div>
+                                </div>
+                                <div class="startAndPicture">
+                                        <button type="button" class="lancer" onclick=lancement()>
+                                                <i class="fas fa-robot"></i>
+                                        </button>
+                                </div>
+                        </section>
+                        <section class="pageDeux">
+                                <div class="entete">
+                                        <i class="fas fa-arrow-left"></i>
+                                        <h2>Discussion</h2>
+                                </div>
+                                <div class="discussion">
+                                        <div class="iaInfo">
+                                                <span><i class="fas fa-robot"></i></span>
+                                                <p>Bienvenu(e) je suis PETBUDDY, Que voulez vous savoir ?</p>
+                                        </div>
+                                </div>
+                                <div class="form">
+                                        <textarea id="message" rows="2"
+                                                placeholder="Entrer votre recherche ..."></textarea>
+                                        <button onclick="" id="btn"><i class='bx bxs-send'></i></button>
+                                </div>
+                        </section>
+                </main>
+                <footer>
+                        <p>PETBUDDY Chatbot &copy; SIMPLON CI 2025</p>
+                </footer>
+        </section>
+        <script src="./js/anim.js"></script>
+        <script src="/js/api.js"></script>
+</body>
+
+</html>

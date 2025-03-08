@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Righteous&display=swap');
+
+:root{
+        /* theme blanc */
+        --couleur_de_fond:#E2DFD0;
+        --couleur_de_texte:#191919;
+        --couleur_de_button:#3674B5;
+        /* espace */
+        --padding: 8px 12px;
+        --poice_titre:"Righteous", serif;
+        --police_texte:"Inter", sans-serif;
+        --shadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        --rounded:15px
+}
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+/*-----------------Parent-----------------*/
+body{
+        width: 100%;
+        height: 100%;
+        background-color: var(--couleur_de_fond);
+}
+section{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        transition: .5s;
+}
+nav{
+        background-color: var(--couleur_de_button);
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+}
+main{
+        width: 100%;
+        height: 87vh;
+        padding: 5px;
+}
+footer{
+        width: 100%;
+        height: 5vh;
+        background-color: var(--couleur_de_button);
+}
+/*-----------------NAV ELEMENT-----------------*/
+nav h1{
+        font-family: var(--poice_titre);
+        color: var(--couleur_de_fond);
+        font-size: 2rem;
+}
+nav h1 i{
+        color: var(--couleur_de_fond);
+        animation: colorChange 3s linear 0s infinite normal;
+}
+@keyframes colorChange{
+        0%{
+                color: var(--couleur_de_fond);
+        }
+        50%{
+                color: var(--couleur_de_texte);
+        }
+        100%{
+                color: var(--couleur_de_fond);
+        }
+}
+.themeBtn{
+        min-width: 50px;
+        height: 30px;
+        background-color: var(--couleur_de_texte);
+        border-radius: var(--rounded);
+        box-shadow: var(--shadow);
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 2px;
+}
+.theme{
+        width: 25px;
+        height: 25px;
+        background-color: var(--couleur_de_fond);
+        border-radius: 50%;
+        box-shadow: var(--shadow);
+}
+/*-----------------MAIN ELEMENT-----------------*/
+.pageUn{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 10px;
+}
+.bienvenueContainer{
+        padding:5px 10px;
+        overflow: hidden;
+}
+.bienvenueContainer div{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-family: var(--police_texte);
+        height: 50%;
+        align-items: center;
+        justify-content: center;
+}
+.bienvenueContainer div:first-child{
+        height: 35%;
+}
+.bienvenueContainer div:last-child{
+        height: 65%;
+}
+.bienvenueContainer div:last-child img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: top;
+        z-index: 100;
+}
+strong{
+        font-family: var(--poice_titre);
+        color: var(--couleur_de_button);
+        text-transform: uppercase;
+}
+.bienvenueContainer span{
+        display: flex;
+        justify-content: center;
+}
+.bienvenueContainer h2{
+        font-family: var(--police_texte);
+        color: gray;
+        font-weight: 400;
+}
+.startAndPicture{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        padding-bottom:30px ;
+}
+.startAndPicture button{
+        width: 60px;
+        height: 60px;
+        background-color: var(--couleur_de_button);
+        border-radius: var(--rounded);
+        border: none;
+        font-family: var(--police_texte);
+        font-size: 1.2rem;
+        color: var(--couleur_de_fond);
+        box-shadow: var(--shadow);
+        transition: all .5s;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        gap: 10px;
+        cursor: pointer;
+        margin-right: 20px;
+}
+.startAndPicture button:hover{
+        background-color: #191919;
+}
+.startAndPicture button i{
+        font-size: 2rem;
+}
+/*-----------------PAGE DEUX-----------------*/
+.pageUn, .pageDeux{
+        margin: 2px;
+        box-shadow: var(--shadow);
+}
+.pageUn{
+        display: none;
+}
+.pageDeux{
+        display: none;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 20fr 2fr;
+        padding: 5px;
+        border-radius: var(--rounded);
+}
+.pageDeux .entete{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: var(--couleur_de_texte);
+        border-radius: var(--rounded);
+}
+.enteteBgActive{
+        background-color: var(--couleur_de_fond);
+}
+.pageDeux .entete i{
+        width: 35px;
+        height: 35px;
+        background-color: var(--couleur_de_button);
+        color: var(--couleur_de_fond);
+        font-size: 1.1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        transition: background-color .5s;
+        cursor: pointer;
+}
+.pageDeux .entete i:hover{
+        background-color: #191919;
+}
+.pageDeux .entete h2{
+        font-family: var(--poice_titre);
+        color: var(--couleur_de_fond);
+        font-weight: 300;
+        padding-left: 10px;
+}
+.discussion{
+        overflow-y: auto;
+        border-radius: var(--rounded);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+}
+.discussion div{
+        font-family: var(--police_texte);
+        display: flex;
+        align-items: start;
+        gap: 10px;
+}
+.discussion div i{
+        width: 35px;
+        height: 35px;
+        background-color: var(--couleur_de_button);
+        color: var(--couleur_de_fond);
+        font-size: 1.1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+}
+.discussion div p{
+        background-color: var(--couleur_de_button);
+        padding: 10px;
+        border-radius: 10px;
+        width: 300px;
+        display: inline-block;
+        font-family: var(--police_texte);
+        font-weight: 300;
+        font-size: 1rem;
+        color: var(--couleur_de_fond);
+}
+.iaInfo{
+        justify-content: start;
+}
+.userInfo{
+        justify-content: end;
+}
+.form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-color: var(--couleur_de_texte);
+        border-radius: var(--rounded);
+        box-shadow: var(--shadow);
+}
+.form textarea{
+        width: 80%;
+        height: 100%;
+        border: none;
+        background-color: transparent;
+        padding: 10px;
+        color:var(--couleur_de_fond);
+        font-family: var(--police_texte);
+        font-size: 1rem;
+        outline: none;
+        font-weight: 300;
+}
+.form button{
+        width: 20%;
+        height: 100%;
+        border: none;
+        background-color: transparent;
+        outline: none   ;
+}
+.form button i{
+        color: var(--couleur_de_fond);
+        font-size: 2rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all .2s;
+}
+.form button i:hover{
+        color: var(--couleur_de_button);
+        transform: scale(1.1);
+}
+.formatter{
+        color: white;
+        font-family: var(--police_texte);
+        font-weight: bolder;
+}
+/*-----------------FOOTER-----------------*/
+footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--police_texte);
+        color: var(--couleur_de_fond);
+        font-weight: 300;
+}

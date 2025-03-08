@@ -1,0 +1,30 @@
+/*------------------ACTIVATION EFFET DEPUIS JS----------------*/
+:root{
+                /* theme blanc */
+                --couleur_de_fond:#E2DFD0;
+                --couleur_de_texte:#191919;
+                --couleur_de_button:#3674B5;
+}
+.activeBgTheme{
+        justify-content: end;
+        background-color: var(--couleur_de_fond);
+}
+.activeBgTheme .theme, .backgroundTheme{
+        background-color: #191919;
+        color: var(--couleur_de_fond);
+}
+.formBgChange{
+        background-color: var(--couleur_de_fond);
+}
+.formBgChange textarea{
+        color: var(--couleur_de_texte);
+        font-family: var(--police_texte);
+        font-size: 1.1rem;
+        font-weight: 600;
+}
+.formChange button i{
+        color: var(--couleur_de_button);
+        font-weight: 600;
+}
+
+
